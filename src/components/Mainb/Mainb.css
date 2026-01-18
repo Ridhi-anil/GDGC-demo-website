@@ -12,6 +12,7 @@ justify-content: center;
 flex-direction: column;
 }
 .main-heading h1{
+    text-align: center;
     font-size: 3.5em;
     font-weight: 400;
 }
