@@ -1,4 +1,7 @@
 #root {
   display:contents;
 }
+body{
+  height: 100vh;
+}
 

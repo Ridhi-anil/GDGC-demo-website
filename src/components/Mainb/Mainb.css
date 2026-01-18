@@ -1,1 +1,43 @@
-.main-heading
+.main-heading{
+    color:black;
+    width:100%;
+    min-height: 60%;
+    background-image: url('../../assets/main-back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.main-heading h1{
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+.main-heading p{
+    padding:0;
+    margin:0;
+    width:50%;
+    color: #3C3C3C;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.sign-up{
+    background-color: #F1F3F4;
+    width:100%;
+    min-height: 7%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up button{
+    background-color: #1A73E8;
+    color: white;
+    font-size:1rem;
+    margin:2px;
+    
+    padding:7px 10px 7px 10px;
+    border-radius: 5px;
+}
