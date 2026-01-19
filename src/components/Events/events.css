@@ -14,5 +14,66 @@
 .events{
     background-color: #F1F3F4;
     width:100%;
-    height: 100VH;
+    height: 100vh;
+}
+
+.event-grid{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: row;
+    width:100%;
+}
+
+.event-poster{
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    padding:0.5rem;
+    background-color: white;
+    border:1px solid #000000;
+    
+}
+
+#event-desc{
+    color: black;
+    padding:2rem;
+    font-size: 1.3rem;
+    
+}
+
+.event-poster img{
+    width :100%;
+    height: auto;
+    max-height: 250px;
+    border-bottom: 1px solid #000000;
+}
+#desc{
+    color: black;
+    height: auto;
+    width:90%;
+    max-height:100px;
+    overflow: hidden;
+}
+
+.event-buttons{
+    margin:1rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    gap:2%;
+}
+
+#more{
+    background-color:#F1F3F4;
+    padding:0.8rem;
+    border-radius: 0.5rem;
+}
+
+#reg{
+    background-color: #1A73E8;
+    padding:0.8rem;
+    border-radius: 0.5rem;
+    color:white;
+    
 }
