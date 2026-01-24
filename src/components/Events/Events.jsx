@@ -1,4 +1,5 @@
 import "./events.css";
+import events from "../../../DUMMY_DATA.js";
 
 import Event from "./Event.jsx";
 
@@ -15,25 +16,39 @@ export default function Events() {
       <div className="events">
         <p id="event-desc">Ongoing Events</p>
         <div className="event-grid">
-          <Event />
-          <Event />
-          <Event />
+          {events
+            .filter((event) => event.status === "ongoing")
+            .map((event) => (
+              <Event
+                image={event.logo}
+                status={event.status}
+                desc={event.desc}
+              />
+            ))}
         </div>
-      </div>
-      <div className="events">
         <p id="event-desc">Upcoming Events</p>
         <div className="event-grid">
-          <Event />
-          <Event />
-          <Event />
+          {events
+            .filter((event) => event.status === "upcoming")
+            .map((event) => (
+              <Event
+                image={event.logo}
+                status={event.status}
+                desc={event.desc}
+              />
+            ))}
         </div>
-      </div>
-      <div className="events">
         <p id="event-desc">Past Events</p>
         <div className="event-grid">
-          <Event />
-          <Event />
-          <Event />
+          {events
+            .filter((event) => event.status === "past")
+            .map((event) => (
+              <Event
+                image={event.logo}
+                status={event.status}
+                desc={event.desc}
+              />
+            ))}
         </div>
       </div>
     </>

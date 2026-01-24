@@ -1,17 +1,19 @@
-import eventLogo from "../../assets/techsprintjpeg.jpeg";
 import "./events.css";
 
-export default function Event() {
+export default function Event({ image, status, desc }) {
   return (
     <div className="event-poster">
-      <img src={eventLogo} />
-      <p id="desc">
-        Tech Sprint a 7 Day online hackathon where you explore and formulate
-        solutions
-      </p>
-      <div className="event-buttons">
-        <button id="more">More</button>
-        <button id="reg">Register</button>
+      <img src={image} />
+      <div className="event-content">
+        <p id="desc">{desc}</p>
+        <div className="event-buttons">
+          {status === "upcoming" && (
+            <>
+              <button id="more">More</button>
+              <button id="reg">Register</button>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
