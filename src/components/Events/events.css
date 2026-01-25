@@ -47,12 +47,11 @@
 
 #event-desc{
     color: black;
-    padding:2rem;
     font-size: 1.5rem;
     width: 90%;
-    margin-left:2rem;
+    width:100%;
     text-align: left;
-    padding-left:3rem;
+    width:76%;
 }
 
 .event-poster img{
@@ -66,13 +65,14 @@
   flex: 1;                 
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  
+  
 }
 
 #desc{
     color: black;
     height: auto;
-    width:90%;
+    width:100%;
     max-height:100px;
     overflow: hidden;
 }
@@ -84,9 +84,9 @@
 
 .event-buttons button{
     margin-right: 3%;
+    font-family: "poppins";
+    font-size: 1.6rem;
 }
-
-
 
 #more{
     background-color:#F1F3F4;
@@ -118,5 +118,33 @@
     .event-poster{
         width:80%;
         margin-top:3%;
+    }
+    .event-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .event-heading h2{
+        font-size: 2.6rem;
+        margin-bottom:2%
+    }
+
+    .event-heading p:nth-child(2) {
+    width: 90%;
+    text-align: center;
+    font-size: 1.5rem;
+   }
+    
+    #event-desc{
+        width:70%;
+        font-size: 2rem;
+    }
+    #desc{
+    display:-webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.5rem;
     }
 }
